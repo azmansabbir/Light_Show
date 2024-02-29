@@ -1,0 +1,65 @@
+{
+  "cookies": [
+    {
+      "name": "__Secure-next-auth.callback-url",
+      "value": "https%3A%2F%2Ffrontdev.ideeza.com",
+      "domain": "frontdev.ideeza.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Host-next-auth.csrf-token",
+      "value": "9f899ecd93f444f7172bdd212149b503cad9e4eaaedc3ece263e786cbd9d1773%7Cb11a2b449089e72e0e31113efb1f9b18b3b822fee5ea369434fdad0548776857",
+      "domain": "frontdev.ideeza.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Secure-next-auth.session-token",
+      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..rjRtAKJ1YYhPtN0G.L8NuDTmjrAXa8sez0ffkK6Zg2r-6tzkzkFQynOzmqhml3gx4erGkNIWiLCJXi40DwqCyOobxU1n9qxzoxgqaNS7e5DZZK6QeWOT9bm5J-C8TfX-MtR374XpyfIPHUX_HoJn_kQO3Sdm7ZM7dAw9xCgYjEdms4GZIB7zQ8XlYOvePb9C8QBhT11XLi8-Pmt8u7lPIA2Weldy0AP5ej4AzntopLYV8HWJE0M2K4AqqLlRe3IA3cxg_XUuQHtkEcKp5NsI97brIaXYKyTC67McTFBI8ewDNOwG2m9RTzqDmXy_xUnXuApWxVvFaWKG1UHhgL4TRq66mv8gQ2Vnv_U8ftNzEvuiz3y_j86taY4NmSFVbfZPiG7RJU7ar-OiIakUBYmEO5OY9-2kNnPHsDQUOx1RoioR742r3B-Mtrdf5HkmVrsi383RRlALygx9Eslik2kJcJ1omc035Ve2gvercePE-tX_FCf5BpxixeEblGfWyJgcBl-wag1yb6HsRlencehGhmpHeukJT_LggLLd4ANuhsypCUWbgBvkXE2U5W9JFSgjQYVgIN6rXDV30DUma088whvS4weeLWJ5qDHAxAPekP6kP4yKeuESex0tEHVIyK-8Ngm9LOU7bkoGK7raiwZwcIU_Z11e8UWKPW7tIElzxdCHlBs2ycHvLH0mP1thuezvJX57KvMH8vFjEOiypE3CI-WkERbOcp1FOzWkb_ES_Crj7QUGHp-j6LZsDC9LsWcie__gnGVhsh3iyE8Gv4ue5l1cyVVeOKG905ksBhRfu6u-KauyYZKcTngmdirdmyyXD2ZXVn9Ob.3a5b6YU0g96OJjHEPyHDlA",
+      "domain": "frontdev.ideeza.com",
+      "path": "/",
+      "expires": 1710177402.258319,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://frontdev.ideeza.com",
+      "localStorage": [
+        {
+          "name": "joy_ride",
+          "value": "{\"show_joy_ride\":true}"
+        },
+        {
+          "name": "cookie_preferences",
+          "value": "{\"approved\":true,\"strict\":true}"
+        },
+        {
+          "name": "_t",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyNzY5Mzc5LCJqdGkiOiI1OWIzMmViZDM2MzE0M2U0OWM0MDBiYjNjN2MwNWVhNSIsInVzZXJfaWQiOjM4MH0.LfPIXgKx9AFHxvX-iwCwB-LYKZ0qFmfPBORDfsNUnrU"
+        },
+        {
+          "name": "nextauth.message",
+          "value": "{\"event\":\"session\",\"data\":{\"trigger\":\"getSession\"},\"timestamp\":1707585402}"
+        },
+        {
+          "name": "_r",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNTM2MTM3OSwianRpIjoiOWVkMDVmYmMwODMyNGU4NWIyNmRhMTBkOTMzMWQ2MWYiLCJ1c2VyX2lkIjozODB9.sFIld92F8UFjZMXGvvohKBIo1iaJhOGl0hsa_AdF8ic"
+        },
+        {
+          "name": "threejs-editor",
+          "value": "{\"language\":\"en\",\"autosave\":true,\"project/title\":\"\",\"project/editable\":false,\"project/vr\":false,\"project/renderer/antialias\":true,\"project/renderer/shadows\":true,\"project/renderer/shadowType\":1,\"project/renderer/physicallyCorrectLights\":false,\"project/renderer/toneMapping\":0,\"project/renderer/toneMappingExposure\":1,\"settings/history\":false,\"settings/shortcuts/translate\":\"w\",\"settings/shortcuts/rotate\":\"e\",\"settings/shortcuts/scale\":\"r\",\"settings/shortcuts/undo\":\"z\",\"settings/shortcuts/focus\":\"f\"}"
+        }
+      ]
+    }
+  ]
+}

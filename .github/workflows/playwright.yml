@@ -1,0 +1,45 @@
+name: Playwright Tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 15 * * *" # Cron schedule to trigger workflow at a specific time
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: windows-2019
+
+    steps:
+      
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm i
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Playwright tests
+        run: npm run env:dev ID01-ProjectCreate_GWC.test.ts
+
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: ./playwright-report
+          retention-days: 30
+
+      - name: Deploy to GitHub Pages
+        if: always()
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            BRANCH: gh-pages
+            FOLDER: "./playwright-report"
+
+
+

@@ -1,0 +1,55 @@
+{
+  "name": "Ideeza UI Automation",
+  "version": "1.0.0",
+  "description": "Ideeza UI Automation",
+  "dev": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:dev": "cross-env test_env=dev npx playwright test",
+    "test:stg": "cross-env test_env=stg npx playwright test",
+    "test:prod": "cross-env test_env=prod npx playwright test",
+    "allure:generate": "allure generate ./allure-results --clean && allure open ./allure-report",
+    "update:Snapshot": "npx playwright test --update-snapshots",
+    "test:ProjectSetup": "npx playwright test ID00-ProjectSetup.test.ts",
+    "test:ProjectCreate_GWC": "npx playwright test ID01-ProjectCreate_GWC.test.ts",
+    "test:ProjectCreate_Sell": "npx playwright test ID02-ProjectCreate_Sell.test.ts",
+    "test:ProjectCreateForManufacture": "npx playwright test ID03-ProjectCreateForManufacture.test.ts",
+    "test:ProjectSendToManufacture": "npx playwright test ID04-ProjectSendToManufacture.test.ts",
+    "test:ProjectAcceptByManufacture": "npx playwright test ID05-ProjectAcceptByManufacture.test.ts",
+    "test:ProjectPaymentFromUserSide": "npx playwright test ID06-ProjectPaymentFromUserSide.test.ts",
+    "test:Part_3dCase": "npx playwright test ID07-Part_3dCase.test.ts",
+    "test:Part_Electronics": "npx playwright test ID08-Part_Electronics.test.ts",
+    "test:Part_Code": "npx playwright test ID09-Part_Code.test.ts",
+    "test:Component_3dCase": "npx playwright test ID10-Component_3dCase.test.ts",
+    "test:Component_Electronics": "npx playwright test ID11-Component_Electronics.test.ts",
+    "test:Component_Code": "npx playwright test ID12-Component_Code.test.ts",
+    "test:BuyProject": "npx playwright test ID13-BuyProject.test.ts"
+  },
+  "keywords": [
+    "Plawright",
+    "Test Automation",
+    "JavaScript",
+    "Reliability Testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.41.2",
+    "clipboardy": "^2.3.0",
+    "cross-env": "^7.0.3",
+    "fs": "^0.0.1-security",
+    "playwright": "^1.26.0",
+    "playwright-slack-report": "^1.0.19",
+    "tesseract.js": "^2.1.5",
+    "ts-node": "10.9.1",
+    "typescript": "4.8.3"
+  },
+  "dependencies": {
+    "@tenkeylabs/dappwright": "^2.8.1",
+    "@zen-qa/playwright.slack.reporter": "^1.0.2",
+    "axios": "^1.6.7",
+    "dotenv": "^16.3.2",
+    "nodemailer": "^6.8.0",
+    "test-results-reporter": "^1.0.15"
+  }
+}

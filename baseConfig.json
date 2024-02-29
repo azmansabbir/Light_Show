@@ -1,0 +1,15 @@
+{
+  "Project": "Ideeza UI Automation",
+  "Env": "Dev",
+  "Language": "",
+  "elementFinderURL": "https://colorlib.com/etc/regform/colorlib-regform-36/",
+  "FromMailaddress": "",
+  "FromAddressPassword": "",
+  "ToMailAddress": [""],
+  "TeamsWebhookURL": "",
+  "SlackWebhookURL": "https://hooks.slack.com/services/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",
+  "MailServiceProvider": "Gmail",
+  "MailNotification": "yes",
+  "TeamsNotification": "yes",
+  "GithubReportlink": "https://sabbir-of.github.io/ideeza"
+}

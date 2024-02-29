@@ -1,0 +1,71 @@
+{
+  "email": "user@ideeza.com",
+  "password": "Nopass123",
+  "manufactureEmail": "manufacturer@example.com",
+  "manufacturePassword": "Nopass123",
+  "qa1username1": "qa-1",
+  "qa1password": "mFkTylCDNC",
+  "ds": "vkaoafyu@arxxwalls.com",
+  "passwordd": "secretpassword",
+  "oldusername": "garrett",
+  "oldpassword": "LFQIISIc",
+  "invalidusername": "InvalidUsername",
+  "invalidpassword": "InvalidPassword",
+  "name": "Mariusz",
+  "token": "93be487cea0fb39c26e6bda2b01b55b015b617eea74cb45cff3f73e9b0c15d90",
+
+  "first_names": [
+    "Mariusz",
+    "Marek",
+    "Robert",
+    "Marcin",
+    "Przemek",
+    "Adam",
+    "Grzegorz",
+    "Adrian",
+    "Piotr",
+    "Paweł"
+  ],
+  "last_names": [
+    "Podgorski",
+    "Pawłowski",
+    "Kowalski",
+    "Marcinkiewicz",
+    "Macierewicz",
+    "Tyszka",
+    "Duda",
+    "Kornhauzer",
+    "Goldfinger",
+    "Wiśniewski",
+    "Lewandowski"
+  ],
+  "department": [
+    "Production",
+    "Sale",
+    "supply",
+    "warehouse",
+    "management",
+    "bookkeeping",
+    "HR"
+  ],
+  "blickChainMintList": [
+    "Ethereum",
+    "Polygon",
+    "Goerli Testnet (Ethereum)",
+    "Mumbai Testnet (Polygon)"
+  ],
+  "collectionTypeList": ["Project", "Part", "Component", "PRESELL"],
+  "getDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  "collecionName": [
+    "Automated Collection",
+    "Marek",
+    "Robert",
+    "Marcin",
+    "Przemek",
+    "Adam",
+    "Grzegorz",
+    "Adrian",
+    "Piotr",
+    "Paweł"
+  ]
+}
