@@ -7,6 +7,7 @@ import testData from "@testData/testData";
 import metaMaskPage from "@pages/metamask.page";
 import LoginPage from "@pages/Login.page";
 import ENV from "@utils/env";
+import Wallet from "@tenkeylabs/dappwright/dist/wallets/wallet";
 ENV
 
 
@@ -14,7 +15,7 @@ ENV
 
 
 
-test('ID-Parts-3DCase-001 | User |  Validate User Can Successfully Part Wit Code', async ({ page, loginPage, newProjectPage, metaMaskPage }) => {
+test('ID-Parts-3DCase-001 | User |  Validate User Can Successfully Part Wit Code', async ({ page, loginPage, newProjectPage, wallet }) => {
 
         // await page.goto("/user/dashboard/code/add-part", { timeout: 1200000, waitUntil: "domcontentloaded" })
         await page.goto(ENV.BASE_URL, { timeout: 1200000, waitUntil: "domcontentloaded" })
@@ -104,7 +105,8 @@ test('ID-Parts-3DCase-001 | User |  Validate User Can Successfully Part Wit Code
         // let newOne = null;
         await newProjectPage.clickOnMetaMaskBtn()
         await page.waitForLoadState("networkidle")
-        await newProjectPage.approveMetaMask()
+        // await newProjectPage.approveMetaMask()
+        await wallet.approve()
 
         await newProjectPage.clickOnContinueButton()
         await page.waitForLoadState("load")
