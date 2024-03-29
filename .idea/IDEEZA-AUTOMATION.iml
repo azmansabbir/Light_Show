@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/test-results" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/Crashpad/attachments" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/Crashpad/reports" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/Default/Download Service/Files" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/Default/JumpListIconsMostVisited" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/Default/JumpListIconsRecentClosed" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/Default/Sessions" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/Default/blob_storage" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/Safe Browsing" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/optimization_guide_model_store" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/optimization_guide_model_store/13/E6DC4029A1E4B4C1/C3866BE3CE50D371" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/optimization_guide_model_store/15/E6DC4029A1E4B4C1/7E5243D0919517EE" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/optimization_guide_model_store/2/E6DC4029A1E4B4C1/FA7160AE31A5A7FF" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/optimization_guide_model_store/20/E6DC4029A1E4B4C1/DF02B07423C99768" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/optimization_guide_model_store/25/E6DC4029A1E4B4C1/C530F5714CD1D54B" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/optimization_guide_model_store/31/E6DC4029A1E4B4C1/B2FEF4D293E18288" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/optimization_guide_model_store/34/E6DC4029A1E4B4C1/4D69F42918023F2C" />
+      <excludeFolder url="file://$MODULE_DIR$/tests/setup/Data/optimization_guide_model_store/9/E6DC4029A1E4B4C1/BCCADE909C0896F9" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

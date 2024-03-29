@@ -5,9 +5,9 @@
   "dev": "index.js",
   "scripts": {
     "test": "npx playwright test",
-    "test:dev": "cross-env test_env=dev npx playwright test",
-    "test:stg": "cross-env test_env=stg npx playwright test",
-    "test:prod": "cross-env test_env=prod npx playwright test",
+    "test:dev": "cross-env NODE_ENV=dev npx playwright test",
+    "test:prod": "cross-env NODE_ENV=prod npx playwright test",
+    "test:stg": "cross-env NODE_ENV=stg npx playwright test",
     "allure:generate": "allure generate ./allure-results --clean && allure open ./allure-report",
     "update:Snapshot": "npx playwright test --update-snapshots",
     "test:ProjectSetup": "npx playwright test ID00-ProjectSetup.test.ts",
@@ -45,11 +45,11 @@
     "typescript": "4.8.3"
   },
   "dependencies": {
-    "@tenkeylabs/dappwright": "^2.8.1",
+    "@tenkeylabs/dappwright": "^2.8.2",
     "@zen-qa/playwright.slack.reporter": "^1.0.2",
     "axios": "^1.6.7",
     "dotenv": "^16.3.2",
-    "nodemailer": "^6.8.0",
-    "test-results-reporter": "^1.0.15"
+    "nodemailer": "^6.9.13",
+    "test-results-reporter": "^0.0.4"
   }
 }

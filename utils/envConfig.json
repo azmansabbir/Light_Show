@@ -1,0 +1,32 @@
+{
+  "dev": {
+    "BASE_URL": "https://frontdev.ideeza.com/",
+    "USERNAME":"user@ideeza.com",
+    "PASSWORD":"Nopass123",
+    "PROJECT_CREATE": "user/dashboard/project/create",
+    "META_URL": "chrome-extension://olbjhfmokehhjchfmnhkdelbebllhljh/home.html",
+    "TOKEN": "17a75569989837200a68b0e0a41a19d0bd9996104011f098fecf912b6fcd8c20",
+    "ADMIN_EMAIL" : "admin@example.com",
+    "ADMIN_PASSWORD" : "Nopass123"
+  },
+  "prod": {
+    "BASE_URL": "https://frontstg.ideeza.com/",
+    "USERNAME":"user@ideeza.com",
+    "PASSWORD":"Nopass123",
+    "PROJECT_CREATE": "user/dashboard/project/create",
+    "META_URL": "chrome-extension://olbjhfmokehhjchfmnhkdelbebllhljh/home.html",
+    "TOKEN": "17a75569989837200a68b0e0a41a19d0bd9996104011f098fecf912b6fcd8c20",
+    "ADMIN_EMAIL" : "admin@example.com",
+    "ADMIN_PASSWORD" : "Nopass123"
+  },
+  "stg": {
+    "BASE_URL": "https://test.ideeza.com/",
+    "USERNAME":"user@ideeza.com",
+    "PASSWORD":"Nopass123",
+    "PROJECT_CREATE": "user/dashboard/project/create",
+    "META_URL": "chrome-extension://olbjhfmokehhjchfmnhkdelbebllhljh/home.html",
+    "TOKEN": "17a75569989837200a68b0e0a41a19d0bd9996104011f098fecf912b6fcd8c20",
+    "ADMIN_EMAIL" : "admin@example.com",
+    "ADMIN_PASSWORD" : "Nopass123"
+  }
+}

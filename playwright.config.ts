@@ -1,9 +1,12 @@
 import { join } from 'path';
 import type { PlaywrightTestConfig } from '@playwright/test';
 const path = require('path');
-const pathToExtension = path.join(__dirname, './tests/fixtures/metamask-chrome-11.10.0');
+// const pathToExtension = path.join(__dirname, './tests/fixtures/metamask-chrome-11.10.0');
+const pathToExtension = path.join(__dirname, './tests/admin/MetaMask.crx');
+
 const userDataDir = path.join(__dirname, '/tests/QuickStart/User-Data-Dir/Chrome/User Data/Default/Extensions/nkbihfbeogaeaoehlefnkodbefgpgknn/10.35.1_0');
 import ENV from "@utils/env";
+
 
 const config: PlaywrightTestConfig = {
   //
@@ -13,30 +16,37 @@ const config: PlaywrightTestConfig = {
   // testDir: './tests',
   // globalSetup: "./global-auth.ts",
   testMatch: [
+    //
+    // "All.test.ts",
 
-    // "ID00-ProjectSetup.test.ts",
+    "ID00-ProjectSetup.test.ts",
 
-    // "ID01-ProjectCreate_GWC.test.ts",
-    // "ID02-ProjectCreate_Sell.test.ts",
+    "ID01-ProjectCreate_GWC.test.ts",
+    "ID02-ProjectCreate_Sell.test.ts",
 
-    // "ID03-ProjectCreateForManufacture.test.ts",
-    // "ID04-ProjectSendToManufacture.test.ts",
-    // "ID05-ProjectAcceptByManufacture.test.ts",
-    // "ID06-ProjectPaymentFromUserSide.test.ts",
+    "ID03-ProjectCreateForManufacture.test.ts",
+    "ID04-ProjectSendToManufacture.test.ts",
+    "ID05-ProjectAcceptByManufacture.test.ts",
+    "ID06-ProjectPaymentFromUserSide.test.ts",
 
-    // "ID07-Part_3dCase.test.ts",
-    // "ID08-Part_Electronics.test.ts",
+    "ID07-Part_3dCase.test.ts",
+    "ID08-Part_Electronics.test.ts",
     "ID09-Part_Code.test.ts",
 
-    // "ID10-Component_3dCase.test.ts",
-    // "ID11-Component_Electronics.test.ts",
-    // "ID12-Component_Code.test.ts",
+    "ID10-Component_3dCase.test.ts",
+    "ID11-Component_Electronics.test.ts",
+    "ID12-Component_Code.test.ts",
 
-    // "ID13-BuyProject.test.ts",
+    "ID13-BuyProject.test.ts",
     // "auth.setup.ts",
 
-    // "collection.test.ts",
-    // "demo.test.ts"
+    "collection.test.ts",
+    "campaignCreate.test.ts",
+    "buyUtility.test.ts",
+
+
+
+
 
 
   ],
@@ -49,21 +59,21 @@ const config: PlaywrightTestConfig = {
   retries: process.env.CI ? 1 : 0,
   workers: process.env.CI ? 1 : 1,
 
-  reporter: process.env.CI ? [["junit", {
-    outputFile: "results.xml"
-  }]] : [["json", {
-    outputFile: "report.json"
-  }], ["html", {
-    open: "never"
-  }]],
+  // reporter: process.env.CI ? [["junit", {
+  //   outputFile: "results.xml"
+  // }]] : [["json", {
+  //   outputFile: "report.json"
+  // }], ["html", {
+  //   open: "never"
+  // }]],
 
   // reporter: [ ['html', { outputFolder: './playwright-report/'+ ReportDate}]],
 
 
 
-  // reporter: [["html", {
-  //   open: "never"
-  // }], ['./My-Reporter.js']],
+  reporter: [["html", {
+    open: "never"
+  }], ['./My-Reporter.js']],
 
   // globalTeardown: require.resolve("./mailer.ts"),
 
@@ -102,7 +112,7 @@ const config: PlaywrightTestConfig = {
 
     // storageState: "./auth.json",
     // actionTimeout: 2 * 60 * 1000,
-    trace: process.env.CI ? "off" : "off",
+    trace: process.env.CI ? "off" : "on",
     video: process.env.CI ? "off" : "off",
     screenshot: process.env.CI ? "on" : "on",
   },

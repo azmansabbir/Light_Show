@@ -1,14 +1,15 @@
 import { test as base, chromium, type BrowserContext } from '@playwright/test';
 import metaMaskPage from '@pages/metamask.page';
 const path = require('path');
-const userDirData = path.join(__dirname, '/tests/QuickStart/User-Data-Dir/Chrome/User Data/Default/Extensions/nkbihfbeogaeaoehlefnkodbefgpgknn/10.35.1_0');
+const userDirData = path.join(__dirname, './Data');
+const loadExtension = path.join(__dirname, 'C:/Users/AzmanSabbir/AppData/Local/Google/Chrome/User Data/Default/Extensions/nkbihfbeogaeaoehlefnkodbefgpgknn');
 
 export const test = base.extend<{
   context: BrowserContext;
   extensionId: string;
 }>({
   context: async ({ }, use) => {
-    const pathToExtension = path.join(__dirname, '/MyMetamaskExtension');
+    const pathToExtension = path.join(__dirname, '/tests/QuickStart/metamask-chrome-11.12.4');
     const context = await chromium.launchPersistentContext(userDirData, {
       headless: false,
       args: [

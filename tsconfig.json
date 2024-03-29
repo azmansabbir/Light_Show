@@ -10,7 +10,7 @@
     "types": ["node"],
     "baseUrl": ".",
     "paths": {
-      "@pages/*": ["pages/loginPage/*", "pages/quickStartPages/*"],
+      "@pages/*": ["pages/loginPage/*", "pages/userPages/*", "pages/adminPages/*"],
       "@fixtures/*": ["fixtures/*"],
       "@utils/*": ["utils/*"],
       "@testData/*": [

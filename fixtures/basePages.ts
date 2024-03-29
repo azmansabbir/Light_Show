@@ -6,7 +6,7 @@ import signUpPage from "@pages/SignUp.page";
 import { BrowserContext, chromium } from "playwright";
 // import { Page } from "tests/fixtures/chrome-extension"
 // import { test as base }  from "tests/fixtures/chrome-extension"
-import { test as base } from "tests/QuickStart/global-setup"
+import { test as base } from "tests/setup/global-setup"
 import { Page } from "@playwright/test";
 
 
@@ -14,7 +14,7 @@ import { Page } from "@playwright/test";
 import functions from "@testData/helper";
 import testData from "@testData/testData";
 import metaMaskPage from "@pages/metamask.page";
-import CollectionPage from "pages/admin/Collection.page";
+import CollectionPage from "../pages/adminPages/Collection.page";
 
 let page: Page;
 const test = base.extend<{
