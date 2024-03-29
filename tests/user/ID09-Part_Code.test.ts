@@ -10,7 +10,7 @@ import {deleteFolderRecursive} from "../setup/removeFolder";
 import metaMaskPage from "@pages/metamask.page";
 ENV
 
-test('ID-Parts-3DCase-001 | User |  Validate User Can Successfully Add Part With Code', async ({ page }) => {
+test.only('ID-Parts-3DCase-001 | User |  Validate User Can Successfully Add Part With Code', async ({ page }) => {
         /*
           This test case verifies that an error message is displayed successfully when an admin tries to add a configuration without inputting any data.
           It involves the following steps:
