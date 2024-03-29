@@ -24,7 +24,7 @@ jobs:
       run: npx playwright install --with-deps
 
     - name: Run Playwright tests
-      run: npm run test:stg ID00-ProjectSetup.test.ts
+      run: npm run test:stg collection.test.ts
 
     - name: copy contents of playwright-report
       if: always()
